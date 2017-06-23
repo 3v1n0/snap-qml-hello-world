@@ -1,7 +1,10 @@
 name: qml-hello-world
 version: '0.1-awesome-version'
+icon: qt-logo.svg
 summary: Get started in the fantastic QML world
-description: Snap me, please.
+description: |
+  Snap me, please. And see how I run qml!
+  https://github.com/3v1n0/snap-qml-hello-world
 
 grade: stable
 confinement: strict
@@ -13,7 +16,7 @@ parts:
     after: [ desktop-qt5 ]
     stage-packages: [ qmlscene, qml-module-qtquick2 ]
     install: |
-      cp -v hello-world.qml $SNAPCRAFT_PART_INSTALL
+      cp -v hello-world.qml qt-logo.svg $SNAPCRAFT_PART_INSTALL
 
 apps:
   qml-hello-world:

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=QML Hello World (from snap)
+Exec=qml-hello-world
+Icon=${SNAP}/qt-logo.svg
+Categories=Development;
